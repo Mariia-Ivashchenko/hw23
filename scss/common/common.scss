@@ -1,0 +1,21 @@
+body {
+  background-color: #C4C4C4;
+  color: $main-color;
+  font-family: $main-font;
+  font-size: $font-size-sm;
+  font-weight: 400;
+}
+
+.container-xl {
+  //padding: 0 40px;
+}
+
+a {
+  color: $main-color;
+  text-decoration: none;
+  display: block;
+}
+
+svg {
+  color: $main-color;
+}

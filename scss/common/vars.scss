@@ -1,9 +1,30 @@
+:root {
+
+}
+
+.navbar {
+  --bs-navbar-brand-margin-end: 46px;
+  --bs-navbar-padding-y: 1rem;
+}
+
+.nav-link {
+  --bs-nav-link-color: $main-color;
+}
+
 $main-color: #17181A;
+$accent-color: #99C63C;
+
 
 $main-font: lato, sans-serif;
 
+
+$font-size-xs: 13px;
 $font-size-sm: 15px;
 
 
 $breakpoint-sm: 576px;
 
+
+$transition: .3s ease-in-out;
+
+$breadcrumb-divider: quote ("&#8213;");

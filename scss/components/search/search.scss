@@ -1,0 +1,60 @@
+.search {
+  &__nav {
+
+    font-size: $font-size-xs;
+
+    .active {
+      color: #73962C;
+    }
+
+    .breadcrumb {
+      gap: 0.5rem; /* відступ між елементами */
+    }
+
+    .breadcrumb-item {
+      display: contents;
+    }
+  }
+
+  &__title {
+    h1 {
+      font-weight: 700;
+      font-size: 28px;
+      line-height: 30px;
+      letter-spacing: 0;
+      margin-bottom: 26px;
+    }
+  }
+
+  &__form {
+    form {
+      width: -webkit-fill-available;
+    }
+
+    &-nav {
+      border-radius: 40px;
+      padding: 8px 0;
+    }
+
+    input {
+      border: none;
+      background-color: rgba(var(--bs-tertiary-bg-rgb), var(--bs-bg-opacity)) !important;
+    }
+
+    button {
+      border: none;
+      color: $main-color;
+    }
+
+
+    &-dropdown {
+
+      &-nav {
+        border-radius: 40px;
+        padding: 8px 0;
+      }
+
+
+    }
+  }
+}

@@ -22,6 +22,11 @@
   --bs-nav-link-color: $main-color;
 }
 
+.accordion-button:not(.collapsed) {
+  --bs-accordion-active-color: #2268B4;
+  --bs-accordion-active-bg: transparent;
+}
+
 body {
   background-color: #eaeaea;
   color: #17181A;
@@ -101,6 +106,51 @@ svg {
 .search__form-dropdown-nav {
   border-radius: 40px;
   padding: 8px 0;
+}
+
+.products__sidebar-btn {
+  font-size: 12px;
+  letter-spacing: 0;
+  padding: 13px 13px;
+}
+.products__sidebar-btn button {
+  font-size: 12px;
+  background-color: transparent;
+  border: none;
+  color: #EB5757;
+}
+.products__sidebar-item {
+  padding: 0 16px;
+}
+.products .accordion-button {
+  box-shadow: none;
+  padding: 0;
+}
+.products hr {
+  margin-top: 0;
+}
+.products .accordion-body {
+  padding: 16px 0;
+}
+.products__card {
+  background-color: white;
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+  border-radius: 30px;
+  max-width: 300px;
+}
+.products__card-image {
+  padding-left: 0.5rem;
+  transition: transform 0.2s ease-in-out;
+}
+.products__card-image:hover {
+  transform: translateX(-100%);
+}
+.products__card-image-icon {
+  position: absolute;
+  top: 10px;
+  right: 10px;
 }
 
 /*# sourceMappingURL=style.css.map */

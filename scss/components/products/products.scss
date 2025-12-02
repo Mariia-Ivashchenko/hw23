@@ -1,0 +1,63 @@
+.products {
+  &__sidebar {
+    &-btn {
+      font-size: 12px;
+      letter-spacing: 0;
+      padding: 13px 13px;
+
+      button {
+        font-size: 12px;
+        background-color: transparent;
+        border: none;
+        color: #EB5757;
+
+
+      }
+    }
+
+    &-item {
+      padding: 0 16px;
+    }
+
+  }
+  .accordion-button {
+    box-shadow: none;
+    padding: 0;
+  }
+
+  hr {
+    margin-top: 0;
+  }
+
+  .accordion-body {
+    padding: 16px 0;
+  }
+
+  &__card {
+    background-color: white;
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    border-radius: 30px;
+    max-width: 300px;
+
+    &-image {
+      padding-left: 0.5rem;
+      transition: transform .2s ease-in-out;
+
+
+      &:hover {
+        transform: translateX(-100%);
+      }
+
+      &-icon {
+        position: absolute;
+        top: 10px;
+        right: 10px;
+      }
+    }
+
+
+
+  }
+}

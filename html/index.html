@@ -135,8 +135,14 @@
                 </div>
             </div>
 
-            <div class="row">
-                <div class="col-lg-2 col-12 search__form-dropdown">
+            <div class="row mb-lg-4">
+                <div class="col-md-2 col-12 d-lg-none">
+                    <button class="btn btn-primary products__sidebar-btn" type="button" data-bs-toggle="offcanvas"
+                            data-bs-target="#filtersOffcanvas" aria-controls="filtersOffcanvas">
+                        <i class="bi bi-funnel"></i> Filters
+                    </button>
+                </div>
+                <div class="col-lg-2 col-md-5 col-12 search__form-dropdown">
                     <nav class="navbar navbar-expand bg-body-tertiary navbar-bg search__form-dropdown-nav">
                         <div class="container-fluid">
                             <div class="collapse navbar-collapse" id="navbarSupportedContent">
@@ -160,7 +166,7 @@
                         </div>
                     </nav>
                 </div>
-                <div class="col-lg-10 col-12 search__form">
+                <div class="col-lg-10 col-md-5 col-12 search__form">
                     <nav class="navbar bg-body-tertiary search__form-nav">
                         <div class="container-fluid">
                             <form class="d-flex" role="search">
@@ -178,7 +184,998 @@
         </div>
     </section>
 
+    <section class="products">
+        <div class="container-xl">
+            <div class="row">
 
+
+                <div class="offcanvas offcanvas-start d-lg-none" tabindex="-1"
+                     id="filtersOffcanvas" aria-labelledby="filtersOffcanvasLabel">
+                    <div class="offcanvas-header">
+                        <h5 class="offcanvas-title" id="filtersOffcanvasLabel">Filters</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="offcanvas"
+                                aria-label="Close"></button>
+                    </div>
+                    <div class="offcanvas-body p-0">
+                        <div class="accordion" id="filterAccordionMobile">
+                            <div class="accordion-item">
+                                <div class="products__sidebar-title">
+                                    <div
+                                        class="btn-group products__sidebar-btn justify-content-between align-items-center w-100"
+                                        role="group" aria-label="Basic example">
+                                        <p class="m-0">23 Results</p>
+                                        <button type="button" class="btn btn-primary p-0">
+                                            <i class="bi bi-x-circle"></i>
+                                            Clear all Filters
+                                        </button>
+                                    </div>
+                                </div>
+                                <div class="products__sidebar-item">
+                                    <h2 class="accordion-header">
+                                        <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                                                data-bs-target="#subcategory">
+                                            Subcategory
+                                        </button>
+                                    </h2>
+                                    <div id="subcategory" class="accordion-collapse collapse show">
+                                        <div class="accordion-body">
+                                            <div class="form-check">
+                                                <input class="form-check-input" type="checkbox" id="subcategory1">
+                                                <label class="form-check-label" for="subcategory1">
+                                                    Xpressions (8)
+                                                </label>
+                                            </div>
+                                            <div class="form-check">
+                                                <input class="form-check-input" type="checkbox" id="subcategory2">
+                                                <label class="form-check-label" for="subcategory2">
+                                                    Xtension (8)
+                                                </label>
+                                            </div>
+                                            <div class="form-check">
+                                                <input class="form-check-input" type="checkbox" id="subcategory3">
+                                                <label class="form-check-label" for="subcategory3">
+                                                    Virage (8)
+                                                </label>
+                                            </div>
+                                            <div class="form-check">
+                                                <input class="form-check-input" type="checkbox" id="subcategory4">
+                                                <label class="form-check-label" for="subcategory4">
+                                                    Contour (4)
+                                                </label>
+                                            </div>
+                                            <div class="form-check">
+                                                <input class="form-check-input" type="checkbox" id="subcategory5">
+                                                <label class="form-check-label" for="subcategory5">
+                                                    Xperience (4)
+                                                </label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <hr>
+                                </div>
+                                <div class="products__sidebar-item">
+                                    <h2 class="accordion-header">
+                                        <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                                                data-bs-target="#type">
+                                            Type
+                                        </button>
+                                    </h2>
+                                    <div id="type" class="accordion-collapse collapse show">
+                                        <div class="accordion-body">
+                                            <div class="form-check">
+                                                <input class="form-check-input" type="checkbox" id="type1">
+                                                <label class="form-check-label" for="type1">
+                                                    Pop-up (8)
+                                                </label>
+                                            </div>
+                                            <div class="form-check">
+                                                <input class="form-check-input" type="checkbox" id="type2">
+                                                <label class="form-check-label" for="type2">
+                                                    Tubar (8)
+                                                </label>
+                                            </div>
+                                            <div class="form-check">
+                                                <input class="form-check-input" type="checkbox" id="type3">
+                                                <label class="form-check-label" for="type3">
+                                                    Table top (8)
+                                                </label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <hr>
+                                </div>
+                                <div class="products__sidebar-item">
+                                    <h2 class="accordion-header">
+                                        <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                                                data-bs-target="#features">
+                                            Features
+                                        </button>
+                                    </h2>
+                                    <div id="features" class="accordion-collapse collapse show">
+                                        <div class="accordion-body">
+                                            <div class="form-check">
+                                                <input class="form-check-input" type="checkbox" id="features1">
+                                                <label class="form-check-label" for="features1">
+                                                    Backlit (7)
+                                                </label>
+                                            </div>
+                                            <div class="form-check">
+                                                <input class="form-check-input" type="checkbox" id="features2">
+                                                <label class="form-check-label" for="features2">
+                                                    TV Mount (8)
+                                                </label>
+                                            </div>
+                                            <div class="form-check">
+                                                <input class="form-check-input" type="checkbox" id="features3">
+                                                <label class="form-check-label" for="features3">
+                                                    Shelving (8)
+                                                </label>
+                                            </div>
+                                            <div class="form-check">
+                                                <input class="form-check-input" type="checkbox" id="features4">
+                                                <label class="form-check-label" for="features4">
+                                                    Arch (8)
+                                                </label>
+                                            </div>
+                                            <div class="form-check">
+                                                <input class="form-check-input" type="checkbox" id="features5">
+                                                <label class="form-check-label" for="features5">
+                                                    Double sided (8)
+                                                </label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <hr>
+                                </div>
+                                <div class="products__sidebar-item">
+                                    <h2 class="accordion-header">
+                                        <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                                                data-bs-target="#width">
+                                            Width
+                                        </button>
+                                    </h2>
+                                    <div id="width" class="accordion-collapse collapse show">
+                                        <div class="accordion-body">
+                                            <div class="form-check">
+                                                <input class="form-check-input" type="checkbox" id="width1">
+                                                <label class="form-check-label" for="width1">
+                                                    2.5 (7)
+                                                </label>
+                                            </div>
+                                            <div class="form-check">
+                                                <input class="form-check-input" type="checkbox" id="width2">
+                                                <label class="form-check-label" for="width2">
+                                                    5 (8)
+                                                </label>
+                                            </div>
+                                            <div class="form-check">
+                                                <input class="form-check-input" type="checkbox" id="width3">
+                                                <label class="form-check-label" for="width3">
+                                                    8 (8)
+                                                </label>
+                                            </div>
+                                            <div class="form-check">
+                                                <input class="form-check-input" type="checkbox" id="width4">
+                                                <label class="form-check-label" for="width4">
+                                                    10 (8)
+                                                </label>
+                                            </div>
+                                            <div class="form-check">
+                                                <input class="form-check-input" type="checkbox" id="width5">
+                                                <label class="form-check-label" for="width5">
+                                                    20 (8)
+                                                </label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <hr>
+                                </div>
+                                <div class="products__sidebar-item">
+                                    <h2 class="accordion-header">
+                                        <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                                                data-bs-target="#height">
+                                            Height
+                                        </button>
+                                    </h2>
+                                    <div id="height" class="accordion-collapse collapse show">
+                                        <div class="accordion-body">
+                                            <div class="form-check">
+                                                <input class="form-check-input" type="checkbox" id="height1">
+                                                <label class="form-check-label" for="height1">
+                                                    4 (7)
+                                                </label>
+                                            </div>
+                                            <div class="form-check">
+                                                <input class="form-check-input" type="checkbox" id="height2">
+                                                <label class="form-check-label" for="height2">
+                                                    8 (8)
+                                                </label>
+                                            </div>
+                                            <div class="form-check">
+                                                <input class="form-check-input" type="checkbox" id="height3">
+                                                <label class="form-check-label" for="height3">
+                                                    10 (8)
+                                                </label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <hr>
+                                </div>
+                                <div class="products__sidebar-item">
+                                    <h2 class="accordion-header">
+                                        <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                                                data-bs-target="#form">
+                                            Form
+                                        </button>
+                                    </h2>
+                                    <div id="form" class="accordion-collapse collapse show">
+                                        <div class="accordion-body">
+                                            <div class="form-check">
+                                                <input class="form-check-input" type="checkbox" id="form1">
+                                                <label class="form-check-label" for="form1">
+                                                    Straight (7)
+                                                </label>
+                                            </div>
+                                            <div class="form-check">
+                                                <input class="form-check-input" type="checkbox" id="form2">
+                                                <label class="form-check-label" for="form2">
+                                                    Curved (8)
+                                                </label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <hr>
+                                </div>
+                                <div class="products__sidebar-item">
+                                    <h2 class="accordion-header">
+                                        <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                                                data-bs-target="#price">
+                                            Price Range
+                                        </button>
+                                    </h2>
+                                    <div id="price" class="accordion-collapse collapse show">
+                                        <div class="accordion-body">
+                                            <div class="form-check">
+                                                <input class="form-check-input" type="checkbox" id="price1">
+                                                <label class="form-check-label" for="price1">
+                                                    550-699 (27)
+                                                </label>
+                                            </div>
+                                            <div class="form-check">
+                                                <input class="form-check-input" type="checkbox" id="price2">
+                                                <label class="form-check-label" for="price2">
+                                                    700-999 (38)
+                                                </label>
+                                            </div>
+                                            <div class="form-check">
+                                                <input class="form-check-input" type="checkbox" id="price3">
+                                                <label class="form-check-label" for="price3">
+                                                    1000-1999 (48)
+                                                </label>
+                                            </div>
+                                            <div class="form-check">
+                                                <input class="form-check-input" type="checkbox" id="price4">
+                                                <label class="form-check-label" for="price4">
+                                                    2000-3999 (8)
+                                                </label>
+                                            </div>
+                                            <div class="form-check">
+                                                <input class="form-check-input" type="checkbox" id="price5">
+                                                <label class="form-check-label" for="price5">
+                                                    4000+ (8)
+                                                </label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <hr>
+                                </div>
+                                <div class="products__sidebar-item">
+                                    <h2 class="accordion-header">
+                                        <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                                                data-bs-target="#setup">
+                                            Set-up Time
+                                        </button>
+                                    </h2>
+                                    <div id="setup" class="accordion-collapse collapse show">
+                                        <div class="accordion-body">
+                                            <div class="form-check">
+                                                <input class="form-check-input" type="checkbox" id="setup1">
+                                                <label class="form-check-label" for="setup1">
+                                                    1+ (Fast)(27)
+                                                </label>
+                                            </div>
+                                            <div class="form-check">
+                                                <input class="form-check-input" type="checkbox" id="setup2">
+                                                <label class="form-check-label" for="setup2">
+                                                    5+ (Easy)(38)
+                                                </label>
+                                            </div>
+                                            <div class="form-check">
+                                                <input class="form-check-input" type="checkbox" id="setup3">
+                                                <label class="form-check-label" for="setup3">
+                                                    10+ (Average)(48)
+                                                </label>
+                                            </div>
+                                            <div class="form-check">
+                                                <input class="form-check-input" type="checkbox" id="setup4">
+                                                <label class="form-check-label" for="setup4">
+                                                    20+ (Expert)(8)
+                                                </label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <aside class="col-lg-2 col-12 products__sidebar d-none d-lg-block">
+                    <div class="accordion" id="filterAccordion">
+                        <div class="accordion-item">
+                            <div class="products__sidebar-title">
+                                <div
+                                    class="btn-group products__sidebar-btn justify-content-between align-items-center w-100"
+                                    role="group" aria-label="Basic example">
+                                    <p class="m-0">23 Results</p>
+                                    <button type="button" class="btn btn-primary p-0">
+                                        <i class="bi bi-x-circle"></i>
+                                        Clear all Filters
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="products__sidebar-item">
+                                <h2 class="accordion-header">
+                                    <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                                            data-bs-target="#subcategory-desktop">
+                                        Subcategory
+                                    </button>
+                                </h2>
+                                <div id="subcategory-desktop" class="accordion-collapse collapse show">
+                                    <div class="accordion-body">
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="checkbox" id="subcategory1-desktop">
+                                            <label class="form-check-label" for="subcategory1-desktop">
+                                                Xpressions (8)
+                                            </label>
+                                        </div>
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="checkbox" id="subcategory2-desktop">
+                                            <label class="form-check-label" for="subcategory2-desktop">
+                                                Xtension (8)
+                                            </label>
+                                        </div>
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="checkbox" id="subcategory3-desktop">
+                                            <label class="form-check-label" for="subcategory3-desktop">
+                                                Virage (8)
+                                            </label>
+                                        </div>
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="checkbox" id="subcategory4-desktop">
+                                            <label class="form-check-label" for="subcategory4-desktop">
+                                                Contour (4)
+                                            </label>
+                                        </div>
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="checkbox" id="subcategory5-desktop">
+                                            <label class="form-check-label" for="subcategory5-desktop">
+                                                Xperience (4)
+                                            </label>
+                                        </div>
+                                    </div>
+                                </div>
+                                <hr>
+                            </div>
+                            <div class="products__sidebar-item">
+                                <h2 class="accordion-header">
+                                    <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                                            data-bs-target="#type-desktop">
+                                        Type
+                                    </button>
+                                </h2>
+                                <div id="type-desktop" class="accordion-collapse collapse show">
+                                    <div class="accordion-body">
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="checkbox" id="type1-desktop">
+                                            <label class="form-check-label" for="type1-desktop">
+                                                Pop-up (8)
+                                            </label>
+                                        </div>
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="checkbox" id="type2-desktop">
+                                            <label class="form-check-label" for="type2-desktop">
+                                                Tubar (8)
+                                            </label>
+                                        </div>
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="checkbox" id="type3-desktop">
+                                            <label class="form-check-label" for="type3-desktop">
+                                                Table top (8)
+                                            </label>
+                                        </div>
+                                    </div>
+                                </div>
+                                <hr>
+                            </div>
+                            <div class="products__sidebar-item">
+                                <h2 class="accordion-header">
+                                    <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                                            data-bs-target="#features-desktop">
+                                        Features
+                                    </button>
+                                </h2>
+                                <div id="features-desktop" class="accordion-collapse collapse show">
+                                    <div class="accordion-body">
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="checkbox" id="features1-desktop">
+                                            <label class="form-check-label" for="features1-desktop">
+                                                Backlit (7)
+                                            </label>
+                                        </div>
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="checkbox" id="features2-desktop">
+                                            <label class="form-check-label" for="features2-desktop">
+                                                TV Mount (8)
+                                            </label>
+                                        </div>
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="checkbox" id="features3-desktop">
+                                            <label class="form-check-label" for="features3-desktop">
+                                                Shelving (8)
+                                            </label>
+                                        </div>
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="checkbox" id="features4-desktop">
+                                            <label class="form-check-label" for="features4-desktop">
+                                                Arch (8)
+                                            </label>
+                                        </div>
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="checkbox" id="features5-desktop">
+                                            <label class="form-check-label" for="features5-desktop">
+                                                Double sided (8)
+                                            </label>
+                                        </div>
+                                    </div>
+                                </div>
+                                <hr>
+                            </div>
+                            <div class="products__sidebar-item">
+                                <h2 class="accordion-header">
+                                    <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                                            data-bs-target="#width-desktop">
+                                        Width
+                                    </button>
+                                </h2>
+                                <div id="width-desktop" class="accordion-collapse collapse show">
+                                    <div class="accordion-body">
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="checkbox" id="width1-desktop">
+                                            <label class="form-check-label" for="width1-desktop">
+                                                2.5 (7)
+                                            </label>
+                                        </div>
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="checkbox" id="width2-desktop">
+                                            <label class="form-check-label" for="width2-desktop">
+                                                5 (8)
+                                            </label>
+                                        </div>
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="checkbox" id="width3-desktop">
+                                            <label class="form-check-label" for="width3-desktop">
+                                                8 (8)
+                                            </label>
+                                        </div>
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="checkbox" id="width4-desktop">
+                                            <label class="form-check-label" for="width4-desktop">
+                                                10 (8)
+                                            </label>
+                                        </div>
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="checkbox" id="width5-desktop">
+                                            <label class="form-check-label" for="width5-desktop">
+                                                20 (8)
+                                            </label>
+                                        </div>
+                                    </div>
+                                </div>
+                                <hr>
+                            </div>
+                            <div class="products__sidebar-item">
+                                <h2 class="accordion-header">
+                                    <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                                            data-bs-target="#height-desktop">
+                                        Height
+                                    </button>
+                                </h2>
+                                <div id="height-desktop" class="accordion-collapse collapse show">
+                                    <div class="accordion-body">
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="checkbox" id="height1-desktop">
+                                            <label class="form-check-label" for="height1-desktop">
+                                                4 (7)
+                                            </label>
+                                        </div>
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="checkbox" id="height2-desktop">
+                                            <label class="form-check-label" for="height2-desktop">
+                                                8 (8)
+                                            </label>
+                                        </div>
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="checkbox" id="height3-desktop">
+                                            <label class="form-check-label" for="height3-desktop">
+                                                10 (8)
+                                            </label>
+                                        </div>
+                                    </div>
+                                </div>
+                                <hr>
+                            </div>
+                            <div class="products__sidebar-item">
+                                <h2 class="accordion-header">
+                                    <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                                            data-bs-target="#form-desktop">
+                                        Form
+                                    </button>
+                                </h2>
+                                <div id="form-desktop" class="accordion-collapse collapse show">
+                                    <div class="accordion-body">
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="checkbox" id="form1-desktop">
+                                            <label class="form-check-label" for="form1-desktop">
+                                                Straight (7)
+                                            </label>
+                                        </div>
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="checkbox" id="form2-desktop">
+                                            <label class="form-check-label" for="form2-desktop">
+                                                Curved (8)
+                                            </label>
+                                        </div>
+                                    </div>
+                                </div>
+                                <hr>
+                            </div>
+                            <div class="products__sidebar-item">
+                                <h2 class="accordion-header">
+                                    <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                                            data-bs-target="#price-desktop">
+                                        Price Range
+                                    </button>
+                                </h2>
+                                <div id="price-desktop" class="accordion-collapse collapse show">
+                                    <div class="accordion-body">
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="checkbox" id="price1-desktop">
+                                            <label class="form-check-label" for="price1-desktop">
+                                                550-699 (27)
+                                            </label>
+                                        </div>
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="checkbox" id="price2-desktop">
+                                            <label class="form-check-label" for="price2-desktop">
+                                                700-999 (38)
+                                            </label>
+                                        </div>
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="checkbox" id="price3-desktop">
+                                            <label class="form-check-label" for="price3-desktop">
+                                                1000-1999 (48)
+                                            </label>
+                                        </div>
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="checkbox" id="price4-desktop">
+                                            <label class="form-check-label" for="price4-desktop">
+                                                2000-3999 (8)
+                                            </label>
+                                        </div>
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="checkbox" id="price5-desktop">
+                                            <label class="form-check-label" for="price5-desktop">
+                                                4000+ (8)
+                                            </label>
+                                        </div>
+                                    </div>
+                                </div>
+                                <hr>
+                            </div>
+                            <div class="products__sidebar-item">
+                                <h2 class="accordion-header">
+                                    <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                                            data-bs-target="#setup-desktop">
+                                        Set-up Time
+                                    </button>
+                                </h2>
+                                <div id="setup-desktop" class="accordion-collapse collapse show">
+                                    <div class="accordion-body">
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="checkbox" id="setup1-desktop">
+                                            <label class="form-check-label" for="setup1-desktop">
+                                                1+ (Fast)(27)
+                                            </label>
+                                        </div>
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="checkbox" id="setup2-desktop">
+                                            <label class="form-check-label" for="setup2-desktop">
+                                                5+ (Easy)(38)
+                                            </label>
+                                        </div>
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="checkbox" id="setup3-desktop">
+                                            <label class="form-check-label" for="setup3-desktop">
+                                                10+ (Average)(48)
+                                            </label>
+                                        </div>
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="checkbox" id="setup4-desktop">
+                                            <label class="form-check-label" for="setup4-desktop">
+                                                20+ (Expert)(8)
+                                            </label>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </aside>
+
+
+                <div class="col-lg-10 col-12">
+                    <div class="row">
+                        <div class="col-xl-3 col-md-4 col-sm-6 col-12">
+                            <div class="products__card mb-4">
+                                <a class="products__card-link" href="#">
+                                    <div class="products__card-image d-flex">
+                                        <img class="img-fluid" src="../assets/img/card1.png" alt="card1">
+                                        <img class="img-fluid hover-image" src="../assets/img/card2.png" alt="card2">
+                                    </div>
+
+                                        <span class="products__card-image-icon">
+                                            <img class="w-100" src="../assets/icons/tag-new.svg" alt="tags-new">
+                                        </span>
+
+
+                                    <div class="products__card-content pb-4">
+                                        <p class="products__card-title text-center mb-0"><b>
+                                            Contour 10x4 </b>
+                                        </p>
+                                        <p class="products__card-description text-center">
+                                            8123,99 €
+                                        </p>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="col-xl-3 col-md-4 col-sm-6 col-12">
+                            <div class="products__card mb-4">
+                                <a class="products__card-link" href="#">
+                                    <div class="products__card-image d-flex">
+                                        <img class="img-fluid" src="../assets/img/card2.png" alt="card2">
+                                        <img class="img-fluid hover-image" src="../assets/img/card3.png" alt="card3">
+                                    </div>
+
+                                        <span class="products__card-image-icon">
+                                            <img  src="../assets/icons/tag-best.svg" alt="tags-best"> <br>
+                                            <img  src="../assets/icons/tag-favorite.svg" alt="tags-favorite">
+                                        </span>
+
+
+                                    <div class="products__card-content pb-4">
+                                        <p class="products__card-title text-center mb-0"><b>
+                                            Contour 10x4 </b>
+                                        </p>
+                                        <p class="products__card-description text-center">
+                                            8123,99 €
+                                        </p>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="col-xl-3 col-md-4 col-sm-6 col-12">
+                            <div class="products__card mb-4">
+                                <a class="products__card-link" href="#">
+                                    <div class="products__card-image d-flex">
+                                        <img class="img-fluid" src="../assets/img/card3.png" alt="card3">
+                                        <img class="img-fluid hover-image" src="../assets/img/card1.png" alt="card1">
+                                    </div>
+                                    <div class="products__card-content pb-4">
+                                        <p class="products__card-title text-center mb-0"><b>
+                                            Contour 10x4 </b>
+                                        </p>
+                                        <p class="products__card-description text-center">
+                                            8123,99 €
+                                        </p>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+
+                        <div class="col-xl-3 col-lg-4 col-sm-6 col-12">
+                            <div class="products__card mb-4">
+                                <a class="products__card-link" href="#">
+                                    <div class="products__card-image d-flex">
+                                        <img class="img-fluid" src="../assets/img/card1.png" alt="card1">
+                                        <img class="img-fluid hover-image" src="../assets/img/card2.png" alt="card2">
+                                    </div>
+
+                                    <span class="products__card-image-icon">
+                                            <img class="w-100" src="../assets/icons/tag-best.svg" alt="tags-best"> <br>
+                                        </span>
+
+
+                                    <div class="products__card-content pb-4">
+                                        <p class="products__card-title text-center mb-0"><b>
+                                            Contour 10x4 </b>
+                                        </p>
+                                        <p class="products__card-description text-center">
+                                            8123,99 €
+                                        </p>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="col-xl-3 col-lg-4 col-sm-6 col-12">
+                            <div class="products__card mb-4">
+                                <a class="products__card-link" href="#">
+                                    <div class="products__card-image d-flex">
+                                        <img class="img-fluid" src="../assets/img/card2.png" alt="card2">
+                                        <img class="img-fluid hover-image" src="../assets/img/card3.png" alt="card3">
+                                    </div>
+
+                                    <span class="products__card-image-icon">
+                                            <img  src="../assets/icons/tag-best.svg" alt="tags-best"> <br>
+                                            <img  src="../assets/icons/tag-favorite.svg" alt="tags-favorite">
+                                        </span>
+
+
+                                    <div class="products__card-content pb-4">
+                                        <p class="products__card-title text-center mb-0"><b>
+                                            Contour 10x4 </b>
+                                        </p>
+                                        <p class="products__card-description text-center">
+                                            8123,99 €
+                                        </p>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="col-xl-3 col-lg-4 col-sm-6 col-12">
+                            <div class="products__card mb-4">
+                                <a class="products__card-link" href="#">
+                                    <div class="products__card-image d-flex">
+                                        <img class="img-fluid" src="../assets/img/card3.png" alt="card3">
+                                        <img class="img-fluid hover-image" src="../assets/img/card1.png" alt="card1">
+                                    </div>
+                                    <div class="products__card-content pb-4">
+                                        <p class="products__card-title text-center mb-0"><b>
+                                            Contour 10x4 </b>
+                                        </p>
+                                        <p class="products__card-description text-center">
+                                            8123,99 €
+                                        </p>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+
+                        <div class="col-xl-3 col-lg-4 col-sm-6 col-12">
+                            <div class="products__card mb-4">
+                                <a class="products__card-link" href="#">
+                                    <div class="products__card-image d-flex">
+                                        <img class="img-fluid" src="../assets/img/card1.png" alt="card1">
+                                        <img class="img-fluid hover-image" src="../assets/img/card2.png" alt="card2">
+                                    </div>
+
+                                    <span class="products__card-image-icon">
+                                            <img class="w-100" src="../assets/icons/tag-new.svg" alt="tags-new">
+                                        </span>
+
+
+                                    <div class="products__card-content pb-4">
+                                        <p class="products__card-title text-center mb-0"><b>
+                                            Contour 10x4 </b>
+                                        </p>
+                                        <p class="products__card-description text-center">
+                                            8123,99 €
+                                        </p>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="col-xl-3 col-lg-4 col-sm-6 col-12">
+                            <div class="products__card mb-4">
+                                <a class="products__card-link" href="#">
+                                    <div class="products__card-image d-flex">
+                                        <img class="img-fluid" src="../assets/img/card2.png" alt="card2">
+                                        <img class="img-fluid hover-image" src="../assets/img/card3.png" alt="card3">
+                                    </div>
+
+                                    <span class="products__card-image-icon">
+                                            <img  src="../assets/icons/tag-best.svg" alt="tags-best"> <br>
+                                            <img  src="../assets/icons/tag-favorite.svg" alt="tags-favorite">
+                                        </span>
+
+
+                                    <div class="products__card-content pb-4">
+                                        <p class="products__card-title text-center mb-0"><b>
+                                            Contour 10x4 </b>
+                                        </p>
+                                        <p class="products__card-description text-center">
+                                            8123,99 €
+                                        </p>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="col-xl-3 col-lg-4 col-sm-6 col-12">
+                            <div class="products__card mb-4">
+                                <a class="products__card-link" href="#">
+                                    <div class="products__card-image d-flex">
+                                        <img class="img-fluid" src="../assets/img/card3.png" alt="card3">
+                                        <img class="img-fluid hover-image" src="../assets/img/card1.png" alt="card1">
+                                    </div>
+                                    <div class="products__card-content pb-4">
+                                        <p class="products__card-title text-center mb-0"><b>
+                                            Contour 10x4 </b>
+                                        </p>
+                                        <p class="products__card-description text-center">
+                                            8123,99 €
+                                        </p>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+
+                        <div class="col-xl-3 col-lg-4 col-sm-6 col-12">
+                            <div class="products__card mb-4">
+                                <a class="products__card-link" href="#">
+                                    <div class="products__card-image d-flex">
+                                        <img class="img-fluid" src="../assets/img/card1.png" alt="card1">
+                                        <img class="img-fluid hover-image" src="../assets/img/card2.png" alt="card2">
+                                    </div>
+
+                                    <span class="products__card-image-icon">
+                                            <img class="w-100" src="../assets/icons/tag-new.svg" alt="tags-new">
+                                        </span>
+
+
+                                    <div class="products__card-content pb-4">
+                                        <p class="products__card-title text-center mb-0"><b>
+                                            Contour 10x4 </b>
+                                        </p>
+                                        <p class="products__card-description text-center">
+                                            8123,99 €
+                                        </p>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="col-xl-3 col-lg-4 col-sm-6 col-12">
+                            <div class="products__card mb-4">
+                                <a class="products__card-link" href="#">
+                                    <div class="products__card-image d-flex">
+                                        <img class="img-fluid" src="../assets/img/card2.png" alt="card2">
+                                        <img class="img-fluid hover-image" src="../assets/img/card3.png" alt="card3">
+                                    </div>
+
+                                    <span class="products__card-image-icon">
+                                            <img  src="../assets/icons/tag-best.svg" alt="tags-best"> <br>
+                                            <img  src="../assets/icons/tag-favorite.svg" alt="tags-favorite">
+                                        </span>
+
+
+                                    <div class="products__card-content pb-4">
+                                        <p class="products__card-title text-center mb-0"><b>
+                                            Contour 10x4 </b>
+                                        </p>
+                                        <p class="products__card-description text-center">
+                                            8123,99 €
+                                        </p>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="col-xl-3 col-lg-4 col-sm-6 col-12">
+                            <div class="products__card mb-4">
+                                <a class="products__card-link" href="#">
+                                    <div class="products__card-image d-flex">
+                                        <img class="img-fluid" src="../assets/img/card3.png" alt="card3">
+                                        <img class="img-fluid hover-image" src="../assets/img/card1.png" alt="card1">
+                                    </div>
+                                    <div class="products__card-content pb-4">
+                                        <p class="products__card-title text-center mb-0"><b>
+                                            Contour 10x4 </b>
+                                        </p>
+                                        <p class="products__card-description text-center">
+                                            8123,99 €
+                                        </p>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+
+                        <div class="col-xl-3 col-lg-4 col-sm-6 col-12">
+                            <div class="products__card mb-4">
+                                <a class="products__card-link" href="#">
+                                    <div class="products__card-image d-flex">
+                                        <img class="img-fluid" src="../assets/img/card1.png" alt="card1">
+                                        <img class="img-fluid hover-image" src="../assets/img/card2.png" alt="card2">
+                                    </div>
+
+                                    <span class="products__card-image-icon">
+                                            <img class="w-100" src="../assets/icons/tag-new.svg" alt="tags-new">
+                                        </span>
+
+
+                                    <div class="products__card-content pb-4">
+                                        <p class="products__card-title text-center mb-0"><b>
+                                            Contour 10x4 </b>
+                                        </p>
+                                        <p class="products__card-description text-center">
+                                            8123,99 €
+                                        </p>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="col-xl-3 col-lg-4 col-sm-6 col-12">
+                            <div class="products__card mb-4">
+                                <a class="products__card-link" href="#">
+                                    <div class="products__card-image d-flex">
+                                        <img class="img-fluid" src="../assets/img/card2.png" alt="card2">
+                                        <img class="img-fluid hover-image" src="../assets/img/card3.png" alt="card3">
+                                    </div>
+
+                                    <span class="products__card-image-icon">
+                                            <img  src="../assets/icons/tag-best.svg" alt="tags-best"> <br>
+                                            <img  src="../assets/icons/tag-favorite.svg" alt="tags-favorite">
+                                        </span>
+
+
+                                    <div class="products__card-content pb-4">
+                                        <p class="products__card-title text-center mb-0"><b>
+                                            Contour 10x4 </b>
+                                        </p>
+                                        <p class="products__card-description text-center">
+                                            8123,99 €
+                                        </p>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="col-xl-3 col-lg-4 col-sm-6 col-12">
+                            <div class="products__card mb-4">
+                                <a class="products__card-link" href="#">
+                                    <div class="products__card-image d-flex">
+                                        <img class="img-fluid" src="../assets/img/card3.png" alt="card3">
+                                        <img class="img-fluid hover-image" src="../assets/img/card1.png" alt="card1">
+                                    </div>
+                                    <div class="products__card-content pb-4">
+                                        <p class="products__card-title text-center mb-0"><b>
+                                            Contour 10x4 </b>
+                                        </p>
+                                        <p class="products__card-description text-center">
+                                            8123,99 €
+                                        </p>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+
+<!--                    pagination-->
+
+
+                </div>
+            </div>
+        </div>
+
+    </section>
 </main>
 
 <!--Modal search-->
@@ -248,7 +1245,6 @@
         </div>
     </div>
 </div>
-
 
 
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"

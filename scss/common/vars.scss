@@ -11,6 +11,11 @@
   --bs-nav-link-color: $main-color;
 }
 
+.accordion-button:not(.collapsed) {
+  --bs-accordion-active-color: #2268B4;
+  --bs-accordion-active-bg: transparent;
+}
+
 $main-color: #17181A;
 $accent-color: #99C63C;
 

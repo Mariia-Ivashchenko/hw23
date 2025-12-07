@@ -1,0 +1,90 @@
+.footer {
+  background-color: #27282b;
+  color: #BDBDBE;
+  font-size: $font-size-xs;
+
+
+  &__info {
+    i {
+      padding-right: 5px;
+    }
+
+    address {
+      font-weight: 400;
+    }
+  }
+
+  &__col {
+    ul,
+    li {
+      list-style: none;
+      text-decoration: none;
+      padding: 0;
+      margin: 0;
+    }
+  }
+
+  h5 {
+    font-weight: 700;
+    font-size: 17px;
+    line-height: 22px;
+    letter-spacing: 0;
+    color: #FFFFFF;
+  }
+
+  a {
+    color: #BDBDBE;
+  }
+
+  &__social {
+
+    &-mail {
+      input {
+        background-color: transparent;
+        border: none;
+
+        &::placeholder {
+          color: #BDBDBE;
+          text-align: end;
+          font-size: $font-size-sm;
+        }
+      }
+
+      &-form {
+        padding: 10px 0;
+      }
+    }
+
+    &-language,
+    &-mail {
+    border: 1px solid #515151;
+      border-radius: 40px;
+    }
+
+    button {
+      background-color: transparent;
+      border: none;
+      color: #FFFFFF;
+      padding: 10px 0;
+    }
+
+    i {
+      &:hover {
+        color: #99C63C;
+      }
+    }
+  }
+
+  &__copyright {
+    background-color: black;
+    padding: 7px 0;
+
+    .bi-arrow-up-circle-fill {
+      font-size: 20px;
+
+      &:hover {
+        color: #99C63C;
+      }
+    }
+  }
+}

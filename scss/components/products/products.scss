@@ -42,8 +42,8 @@
     max-width: 300px;
 
     &-image {
-      padding-left: 0.5rem;
       transition: transform .2s ease-in-out;
+      justify-content: flex-start;
 
 
       &:hover {
@@ -56,8 +56,20 @@
         right: 10px;
       }
     }
+  }
 
+  &__footer {
+    &-dropdown {
+      @media (max-width: 576px) {
+        & {
+          display: none;
+        }
 
+      }
+    }
 
+    &-btn {
+      border: 1px solid #c5bfbf;
+    }
   }
 }

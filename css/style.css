@@ -141,8 +141,8 @@ svg {
   max-width: 300px;
 }
 .products__card-image {
-  padding-left: 0.5rem;
   transition: transform 0.2s ease-in-out;
+  justify-content: flex-start;
 }
 .products__card-image:hover {
   transform: translateX(-100%);
@@ -151,6 +151,78 @@ svg {
   position: absolute;
   top: 10px;
   right: 10px;
+}
+@media (max-width: 576px) {
+  .products__footer-dropdown {
+    display: none;
+  }
+}
+.products__footer-btn {
+  border: 1px solid #c5bfbf;
+}
+
+.footer {
+  background-color: #27282b;
+  color: #BDBDBE;
+  font-size: 13px;
+}
+.footer__info i {
+  padding-right: 5px;
+}
+.footer__info address {
+  font-weight: 400;
+}
+.footer__col ul,
+.footer__col li {
+  list-style: none;
+  text-decoration: none;
+  padding: 0;
+  margin: 0;
+}
+.footer h5 {
+  font-weight: 700;
+  font-size: 17px;
+  line-height: 22px;
+  letter-spacing: 0;
+  color: #FFFFFF;
+}
+.footer a {
+  color: #BDBDBE;
+}
+.footer__social-mail input {
+  background-color: transparent;
+  border: none;
+}
+.footer__social-mail input::placeholder {
+  color: #BDBDBE;
+  text-align: end;
+  font-size: 15px;
+}
+.footer__social-mail-form {
+  padding: 10px 0;
+}
+.footer__social-language, .footer__social-mail {
+  border: 1px solid #515151;
+  border-radius: 40px;
+}
+.footer__social button {
+  background-color: transparent;
+  border: none;
+  color: #FFFFFF;
+  padding: 10px 0;
+}
+.footer__social i:hover {
+  color: #99C63C;
+}
+.footer__copyright {
+  background-color: black;
+  padding: 7px 0;
+}
+.footer__copyright .bi-arrow-up-circle-fill {
+  font-size: 20px;
+}
+.footer__copyright .bi-arrow-up-circle-fill:hover {
+  color: #99C63C;
 }
 
 /*# sourceMappingURL=style.css.map */

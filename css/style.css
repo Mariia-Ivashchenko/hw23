@@ -108,6 +108,9 @@ svg {
   padding: 8px 0;
 }
 
+.products {
+  margin-bottom: 15px;
+}
 .products__sidebar-btn {
   font-size: 12px;
   letter-spacing: 0;
